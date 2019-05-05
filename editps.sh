@@ -20,8 +20,8 @@
 #
 
 # use pdftk to split my original pdf into 2 files.
-pdftk worktm7.pdf cat 1 output tm7front.pdf
-pdftk worktm7.pdf cat 2 output tm7back.pdf
+pdftk tm7.pdf cat 1 output tm7front.pdf
+pdftk tm7.pdf cat 2 output tm7back.pdf
 # I will not join up the edited results because I want to print
 # double sided in a printer that has no support for that.
 
@@ -42,8 +42,44 @@ sed -i 's/showpage/newpath\n415 574 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Robert) show\nshowpage/' tm7front.ps
 sed -i 's/showpage/newpath\n145 553 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(   X    X) show\nshowpage/' tm7front.ps
-sed -i 's/showpage/newpath\n110 540 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n110 539 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Leonard) show\nshowpage/' tm7front.ps
+# Age, date of birth.
+sed -i 's/showpage/newpath\n290 539 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(80) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n372 539 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(22) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n438 539 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(November) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n520 539 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(1938) show\nshowpage/' tm7front.ps
+# Place of birth and Nationality.
+sed -i 's/showpage/newpath\n122 504 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Ivanhoe) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n440 504 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Australian) show\nshowpage/' tm7front.ps
+# Passport particulars.
+sed -i 's/showpage/newpath\n300 470 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(PA3967317) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n490 470 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(11) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n110 436 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(April) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n210 436 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(2016) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n290 436 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(AUS) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n490 436 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(11) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n110 402 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(April) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n210 402 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(2021) show\nshowpage/' tm7front.ps
+# Extension applied for.
+sed -i 's/showpage/newpath\n440 247 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(30) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n90 195 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(To spend more time with friends here.) show\nshowpage/' tm7front.ps
 
 
 ps2pdf tm7front.ps tm7front.pdf
