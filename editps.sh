@@ -40,7 +40,10 @@ sed -i 's/showpage/newpath\n252 574 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Parker) show\nshowpage/' tm7front.ps
 sed -i 's/showpage/newpath\n415 574 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Robert) show\nshowpage/' tm7front.ps
-sed -i 's/showpage/newpath\n153 560 moveto\nshowpage/' tm7front.ps
-sed -i 's/showpage/(O  X  X) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n145 553 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(   X    X) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n110 540 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Leonard) show\nshowpage/' tm7front.ps
+
 
 ps2pdf tm7front.ps tm7front.pdf
