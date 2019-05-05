@@ -75,11 +75,78 @@ sed -i 's/showpage/newpath\n110 402 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(April) show\nshowpage/' tm7front.ps
 sed -i 's/showpage/newpath\n210 402 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(2021) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n310 402 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Tourist) show\nshowpage/' tm7front.ps
 # Extension applied for.
 sed -i 's/showpage/newpath\n440 247 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(30) show\nshowpage/' tm7front.ps
 sed -i 's/showpage/newpath\n90 195 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(To spend more time with friends here.) show\nshowpage/' tm7front.ps
-
-
+# placeholders for data that varies every application.
+# Application date.
+sed -i 's/showpage/newpath\n335 659 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(apday) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n400 659 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(apmon) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n500 659 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(2019) show\nshowpage/' tm7front.ps
+# Arrival data.
+sed -i 's/showpage/newpath\n170 367 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Air Train Bus Walked) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n330 367 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Melbourne Tachiliek Kuala Lumpur) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n130 333 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Mae Sai Bangkok Chiang Mai) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n333 333 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(arday) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n400 333 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(armon) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n510 333 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(2019) show\nshowpage/' tm7front.ps
+# TM6 number.
+sed -i 's/showpage/newpath\n270 300 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(tm6number) show\nshowpage/' tm7front.ps
 ps2pdf tm7front.ps tm7front.pdf
+
+# Process the back page.
+pdftops tm7back.pdf tm7back.ps
+sed -i 's/showpage/\/Times-Roman findfont\nshowpage/' tm7back.ps
+# Scale the font
+sed -i 's/showpage/12 scalefont\nsetfont\nshowpage/' tm7back.ps
+# Write the invariant and rarely changed data.
+# Full name declaration.
+sed -i 's/showpage/newpath\n225 716 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(Robert Leonard Parker) show\nshowpage/' tm7back.ps
+# Address - Moo Baan
+sed -i 's/showpage/newpath\n130 678 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(87\/2 Moo 3) show\nshowpage/' tm7back.ps
+# Road name, not applicable my address.
+sed -i 's/showpage/newpath\n250 678 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/( ) show\nshowpage/' tm7back.ps
+# Tambol
+sed -i 's/showpage/newpath\n400 678 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(San Pu Loei) show\nshowpage/' tm7back.ps
+# District
+sed -i 's/showpage/newpath\n130 640 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(Doi Saket) show\nshowpage/' tm7back.ps
+# Province
+sed -i 's/showpage/newpath\n350 640 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(Chiang Mai) show\nshowpage/' tm7back.ps
+# Additional requirements (Chiang Mai only?)
+# phone
+sed -i 's/showpage/newpath\n288 324 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(Telephone:) show\nshowpage/' tm7back.ps
+sed -i 's/showpage/newpath\n350 324 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(08 8915 4581) show\nshowpage/' tm7back.ps
+# email
+sed -i 's/showpage/newpath\n312 300 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(Email:) show\nshowpage/' tm7back.ps
+sed -i 's/showpage/newpath\n350 300 moveto\nshowpage/' tm7back.ps
+sed -i 's/showpage/(RLP1938@gmail.com) show\nshowpage/' tm7back.ps
+# There is no per application data for this page.
+ps2pdf tm7back.ps tm7back.pdf
+
+# I don't have a 2 side printer capability so I fudge it by hand.
+# If you have double sided printing ability uncomment the next line.
+# pdftk tm7front.pdf tm7back.pdf cat output tm7filled.pdf
+rm *.ps
