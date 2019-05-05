@@ -30,10 +30,17 @@ pdftops tm7front.pdf tm7front.ps
 # set up a font that may do the job
 sed -i 's/showpage/\/Times-Roman findfont\nshowpage/' tm7front.ps
 # Scale the font
-sed -i 's/showpage/40 scalefont\nsetfont\nshowpage/' tm7front.ps
+sed -i 's/showpage/12 scalefont\nsetfont\nshowpage/' tm7front.ps
 # Write the invariant and rarely changed data.
 # TM office location
-sed -i 's/showpage/newpath\n420 700 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n425 705 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Chiang Mai) show\nshowpage/' tm7front.ps
+# Name of Applicant
+sed -i 's/showpage/newpath\n252 574 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Parker) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n415 574 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(Robert) show\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n153 560 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/(O  X  X) show\nshowpage/' tm7front.ps
 
 ps2pdf tm7front.ps tm7front.pdf
