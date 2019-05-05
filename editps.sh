@@ -28,12 +28,12 @@ pdftk worktm7.pdf cat 2 output tm7back.pdf
 # process front page.
 pdftops tm7front.pdf tm7front.ps
 # set up a font that may do the job
-sed -i 's/showpage/\/FF57_0_ABCDEE+TH#20SarabunPSK_00 findfont\nshowpage/' tm7front.ps
+sed -i 's/showpage/\/Times-Roman findfont\nshowpage/' tm7front.ps
 # Scale the font
-sed -i 's/showpage/12 scalefont\nsetfont\nshowpage/' tm7front.ps
+sed -i 's/showpage/40 scalefont\nsetfont\nshowpage/' tm7front.ps
 # Write the invariant and rarely changed data.
 # TM office location
-sed -i 's/showpage/newpath\n414 675 moveto\nshowpage/' tm7front.ps
+sed -i 's/showpage/newpath\n420 700 moveto\nshowpage/' tm7front.ps
 sed -i 's/showpage/(Chiang Mai) show\nshowpage/' tm7front.ps
 
 ps2pdf tm7front.ps tm7front.pdf
