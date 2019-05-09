@@ -62,7 +62,7 @@ echo setfont >> mid
 echo newpath >> mid
 echo 425 705 moveto >> mid
 #office.tgt Immigration_office_name
-echo '(Chiang Mai)' show >> mid
+echo '(Chiang Rai)' show >> mid
 # Name of Applicant
 echo newpath >> mid
 echo 252 574 moveto >> mid
@@ -75,10 +75,10 @@ echo '(Robert)' show >> mid
 echo newpath >> mid
 echo 145 553 moveto >> mid
 #salutation.tgt Salutation_X_out_2_words
-echo '(   X    X)' show >> mid
+echo '(X    X)' show >> mid
 echo newpath >> mid
 echo 110 539 moveto >> mid
-middlename.tgt Middle_name
+#middlename.tgt Middle_name
 echo '(Leonard)' show >> mid
 # Age, date of birth.
 echo newpath >> mid
@@ -157,11 +157,11 @@ echo '(To spend more time with friends here.)' show >> mid
 echo newpath >> mid
 echo 335 659 moveto >> mid
 #apdateDay.tgt Date_of_Application_Day_No
-echo '(apday)' show >> mid
+echo '(11)' show >> mid
 echo newpath >> mid
 echo 400 659 moveto >> mid
 #apdateMonth.tgt Date_of_Application_Month_Name
-echo '(apmon)' show >> mid
+echo '(May)' show >> mid
 echo newpath >> mid
 echo 500 659 moveto >> mid
 #apdateYear.tgt Date_of_Application_Year_Number
@@ -170,23 +170,23 @@ echo '(2019)' show >> mid
 echo newpath >> mid
 echo 170 367 moveto >> mid
 #arrByType.tgt Arrived_by_type_of_transportation
-echo '(Air Train Bus Walked)' show >> mid
+echo '(Walked)' show >> mid
 echo newpath >> mid
 echo 330 367 moveto >> mid
 #arrFrom.tgt Traveled_from
-echo '(Melbourne Tachiliek Kuala Lumpur)' show >> mid
+echo '(Tachiliek)' show >> mid
 echo newpath >> mid
 echo 130 333 moveto >> mid
 #arrPort.tgt Port_of_Arrival
-echo '(Mae Sai Bangkok Chiang Mai)' show >> mid
+echo '(Mae Sai)' show >> mid
 echo newpath >> mid
 echo 333 333 moveto >> mid
 #arrDateDayNo.tgt Arrival_Date_Day_No
-echo '(arday)' show >> mid
+echo '(3)' show >> mid
 echo newpath >> mid
 echo 400 333 moveto >> mid
 #arrDateMonName.tgt Arrival_Date_Month_Name
-echo '(armon)' show >> mid
+echo '(May)' show >> mid
 echo newpath >> mid
 echo 510 333 moveto >> mid
 #arrDateYearNo.tgt Arrival_Date_Year_Number
@@ -239,7 +239,7 @@ echo '(87/2 Moo 3)' show >> mid
 echo newpath >> mid
 echo 250 678 moveto >> mid
 #addStreet.tgt Road_Name
-echo '( )' show >> mid
+echo '(-)' show >> mid
 # Tambol
 echo newpath >> mid
 echo 400 678 moveto >> mid

@@ -1,41 +1,40 @@
-# collection of targets within editps.sh
-#office.tgt Immigration_office_name
-#surname.tgt Surname
-#firstname.tgt Firstname
-#salutation.tgt Salutation_X_out_2_words
-middlename.tgt Middle_name
-#age.tgt Present_age
-#birthdayDay.tgt Day_in_month_when_born
-#birthmonthname.tgt Name_of_Month_when_born
-#birthyear.tgt Year_when_born
-#whereborn.tgt Where_born_as_shown_in_passport
-#nationality.tgt Nationality_per_passport
-#passportNumber.tgt Passport_Number
-#ppIssueDate.tgt Passport_Issued_Day_No
-#ppIssueMonth.tgt Passport_Issued_Month_Name
-#ppIssueYear.tgt Passport_Issued_Year_Number
-#ppIssueCountryCode.tgt Passport_Issuing_Country_Code
-#ppExpiresDayNo.tgt Passport_Expires_Day_No
-#ppExpiresMonName.tgt Passport_Expires_Month_Name
-#ppExpiresYearNo.tgt Passport_Expires_Year_Number
-#visatype.tgt Type_of_Visa
-#extendDays.tgt Days_of_Extension_requested
-#extensionReason.tgt Reason_requesting_extension
-#apdateDay.tgt Date_of_Application_Day_No
-#apdateMonth.tgt Date_of_Application_Month_Name
-#apdateYear.tgt Date_of_Application_Year_Number
-#arrByType.tgt Arrived_by_type_of_transportation
-#arrFrom.tgt Traveled_from
-#arrPort.tgt Port_of_Arrival
-#arrDateDayNo.tgt Arrival_Date_Day_No
-#arrDateMonName.tgt Arrival_Date_Month_Name
-#arrDateYearNo.tgt Arrival_Date_Year_Number
-#tm6Number.tgt TM6_Number
-#fullName.tgt Written_By_Full_Name
-#addNo.tgt Adress_Number_Moo_Baan
-#addStreet.tgt Road_Name
-#addTambol.tgt Tambol_or_Sub_district
-#addAmphoe.tgt Amphoe_or_District
-#addChangwat.tgt Changwat_or_Province
-#phone.tgt Phone_Number
-#email.tgt Email_Address
+\#office.tgt
+\#surname.tgt
+\#firstname.tgt
+\#salutation.tgt
+\#middlename.tgt
+\#age.tgt
+\#birthdayDay.tgt
+\#birthmonthname.tgt
+\#birthyear.tgt
+\#whereborn.tgt
+\#nationality.tgt
+\#passportNumber.tgt
+\#ppIssueDate.tgt
+\#ppIssueMonth.tgt
+\#ppIssueYear.tgt
+\#ppIssueCountryCode.tgt
+\#ppExpiresDayNo.tgt
+\#ppExpiresMonName.tgt
+\#ppExpiresYearNo.tgt
+\#visatype.tgt
+\#extendDays.tgt
+\#extensionReason.tgt
+\#apdateDay.tgt
+\#apdateMonth.tgt
+\#apdateYear.tgt
+\#arrByType.tgt
+\#arrFrom.tgt
+\#arrPort.tgt
+\#arrDateDayNo.tgt
+\#arrDateMonName.tgt
+\#arrDateYearNo.tgt
+\#tm6Number.tgt
+\#fullName.tgt
+\#addNo.tgt
+\#addStreet.tgt
+\#addTambol.tgt
+\#addAmphoe.tgt
+\#addChangwat.tgt
+\#phone.tgt
+\#email.tgt
