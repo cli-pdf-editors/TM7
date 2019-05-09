@@ -52,7 +52,7 @@ do
   if [[ "$textin" != "$dataline" ]];
   then
     # Will update the edit script only when the user has made a change.
-    sed -i "$datalno s/$dataline/$textin/" "$fn"
+    sed -i "$datalno s!$dataline!$textin!" "$fn"
   fi
   echo -------------------
 done

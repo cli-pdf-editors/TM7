@@ -62,16 +62,16 @@ echo setfont >> mid
 echo newpath >> mid
 echo 425 705 moveto >> mid
 #office.tgt Immigration_office_name
-echo '(Chiang Rai)' show >> mid
+echo '(Chiang Mai)' show >> mid
 # Name of Applicant
 echo newpath >> mid
 echo 252 574 moveto >> mid
 #surname.tgt Surname
-echo '(Parker)' show >> mid
+echo '(Surname)' show >> mid
 echo newpath >> mid
 echo 415 574 moveto >> mid
 #firstname.tgt Firstname
-echo '(Robert)' show >> mid
+echo '(Firstname)' show >> mid
 echo newpath >> mid
 echo 145 553 moveto >> mid
 #salutation.tgt Salutation_X_out_2_words
@@ -79,66 +79,66 @@ echo '(X    X)' show >> mid
 echo newpath >> mid
 echo 110 539 moveto >> mid
 #middlename.tgt Middle_name
-echo '(Leonard)' show >> mid
+echo '(Middlename)' show >> mid
 # Age, date of birth.
 echo newpath >> mid
 echo 290 539 moveto >> mid
 #age.tgt Present_age
-echo '(80)' show >> mid
+echo '(99)' show >> mid
 echo newpath >> mid
 echo 372 539 moveto >> mid
 #birthdayDay.tgt Day_in_month_when_born
-echo '(22)' show >> mid
+echo '(01)' show >> mid
 echo newpath >> mid
 echo 438 539 moveto >> mid
 #birthmonthname.tgt Name_of_Month_when_born
-echo '(November)' show >> mid
+echo '(January)' show >> mid
 echo newpath >> mid
 echo 520 539 moveto >> mid
 #birthyear.tgt Year_when_born
-echo '(1938)' show >> mid
+echo '(1970)' show >> mid
 # Place of birth and Nationality.
 echo newpath >> mid
 echo 122 504 moveto >> mid
 #whereborn.tgt Where_born_as_shown_in_passport
-echo '(Ivanhoe)' show >> mid
+echo '(Birthplace)' show >> mid
 echo newpath >> mid
 echo 440 504 moveto >> mid
 #nationality.tgt Nationality_per_passport
-echo '(Australian)' show >> mid
+echo '(Esperantish)' show >> mid
 # Passport particulars.
 echo newpath >> mid
 echo 300 470 moveto >> mid
 #passportNumber.tgt Passport_Number
-echo '(PA3967317)' show >> mid
+echo '(ZZ9876543)' show >> mid
 echo newpath >> mid
 echo 490 470 moveto >> mid
 #ppIssueDate.tgt Passport_Issued_Day_No
-echo '(11)' show >> mid
+echo '(31)' show >> mid
 echo newpath >> mid
 echo 110 436 moveto >> mid
 #ppIssueMonth.tgt Passport_Issued_Month_Name
-echo '(April)' show >> mid
+echo '(December)' show >> mid
 echo newpath >> mid
 echo 210 436 moveto >> mid
 #ppIssueYear.tgt Passport_Issued_Year_Number
-echo '(2016)' show >> mid
+echo '(2010)' show >> mid
 echo newpath >> mid
 echo 290 436 moveto >> mid
 #ppIssueCountryCode.tgt Passport_Issuing_Country_Code
-echo '(AUS)' show >> mid
+echo '(AAA)' show >> mid
 echo newpath >> mid
 echo 490 436 moveto >> mid
 #ppExpiresDayNo.tgt Passport_Expires_Day_No
-echo '(11)' show >> mid
+echo '(31)' show >> mid
 echo newpath >> mid
 echo 110 402 moveto >> mid
 #ppExpiresMonName.tgt Passport_Expires_Month_Name
-echo '(April)' show >> mid
+echo '(December)' show >> mid
 echo newpath >> mid
 echo 210 402 moveto >> mid
 #ppExpiresYearNo.tgt Passport_Expires_Year_Number
-echo '(2021)' show >> mid
+echo '(2020)' show >> mid
 echo newpath >> mid
 echo 310 402 moveto >> mid
 #visatype.tgt Type_of_Visa
@@ -157,11 +157,11 @@ echo '(To spend more time with friends here.)' show >> mid
 echo newpath >> mid
 echo 335 659 moveto >> mid
 #apdateDay.tgt Date_of_Application_Day_No
-echo '(11)' show >> mid
+echo '(31)' show >> mid
 echo newpath >> mid
 echo 400 659 moveto >> mid
 #apdateMonth.tgt Date_of_Application_Month_Name
-echo '(May)' show >> mid
+echo '(December)' show >> mid
 echo newpath >> mid
 echo 500 659 moveto >> mid
 #apdateYear.tgt Date_of_Application_Year_Number
@@ -170,23 +170,23 @@ echo '(2019)' show >> mid
 echo newpath >> mid
 echo 170 367 moveto >> mid
 #arrByType.tgt Arrived_by_type_of_transportation
-echo '(Walked)' show >> mid
+echo '(Walked Bus Air Train)' show >> mid
 echo newpath >> mid
 echo 330 367 moveto >> mid
 #arrFrom.tgt Traveled_from
-echo '(Tachiliek)' show >> mid
+echo '(Tachiliek Kuala Lumpur Melbourne)' show >> mid
 echo newpath >> mid
 echo 130 333 moveto >> mid
 #arrPort.tgt Port_of_Arrival
-echo '(Mae Sai)' show >> mid
+echo '(Mae Sai Chiang Mai Bangkok)' show >> mid
 echo newpath >> mid
 echo 333 333 moveto >> mid
 #arrDateDayNo.tgt Arrival_Date_Day_No
-echo '(3)' show >> mid
+echo '(31)' show >> mid
 echo newpath >> mid
 echo 400 333 moveto >> mid
 #arrDateMonName.tgt Arrival_Date_Month_Name
-echo '(May)' show >> mid
+echo '(January)' show >> mid
 echo newpath >> mid
 echo 510 333 moveto >> mid
 #arrDateYearNo.tgt Arrival_Date_Year_Number
@@ -229,32 +229,32 @@ echo setfont >> mid
 echo newpath >> mid
 echo 225 716 moveto >> mid
 #fullName.tgt Written_By_Full_Name
-echo '(Robert Leonard Parker)' show >> mid
+echo '(First Middle Surname)' show >> mid
 # Address - Moo Baan
 echo newpath >> mid
 echo 130 678 moveto >> mid
 #addNo.tgt Adress_Number_Moo_Baan
-echo '(87/2 Moo 3)' show >> mid
+echo '(xx/yy Moo z)' show >> mid
 # Road name, not applicable my address.
 echo newpath >> mid
 echo 250 678 moveto >> mid
 #addStreet.tgt Road_Name
-echo '(-)' show >> mid
+echo '(Road Name or -)' show >> mid
 # Tambol
 echo newpath >> mid
 echo 400 678 moveto >> mid
 #addTambol.tgt Tambol_or_Sub_district
-echo '(San Pu Loei)' show >> mid
+echo '(Tambol)' show >> mid
 # District
 echo newpath >> mid
 echo 130 640 moveto >> mid
 #addAmphoe.tgt Amphoe_or_District
-echo '(Doi Saket)' show >> mid
+echo '(District)' show >> mid
 # Province
 echo newpath >> mid
 echo 350 640 moveto >> mid
 #addChangwat.tgt Changwat_or_Province
-echo '(Chiang Mai)' show >> mid
+echo '(Province)' show >> mid
 # Additional requirements (Chiang Mai only?)
 # phone
 echo newpath >> mid
@@ -263,7 +263,7 @@ echo '(Telephone:)' show >> mid
 echo newpath >> mid
 echo 350 324 moveto >> mid
 #phone.tgt Phone_Number
-echo '(08 8915 4581)' show >> mid
+echo '(08 xxxx yyyy)' show >> mid
 # email
 echo newpath >> mid
 echo 312 300 moveto >> mid
@@ -271,7 +271,7 @@ echo '(Email:)' show >> mid
 echo newpath >> mid
 echo 350 300 moveto >> mid
 #email.tgt Email_Address
-echo '(RLP1938@gmail.com)' show >> mid
+echo '(youremail@provider.com)' show >> mid
 # There is no per application data for this page.
 # Assemble postscript file
 cat mid >> top
