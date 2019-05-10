@@ -10,4 +10,4 @@ Use the provided scripts to fill in the PDF form with your particulars.
 ### Files created
 + __tm7front.pdf__ - the front page of the pdf filled in.
 + __tm7back.pdf__ - back page filled in.
-+ __tm7filled.pdf__ - the filled in completed pdf. This ability to assemble the back and front pages is inhibited presently. The line at 284 in *editps.sh* _# pdftk tm7front.pdf tm7back.pdf cat output tm7filled.pdf_ needs to have the comment character __#__ removed for this to happen.
++ __tm7filled.pdf__ - the filled in completed pdf. This ability to assemble the back and front pages is inhibited presently. The line at 284 in *editps.sh* ```# pdftk tm7front.pdf tm7back.pdf cat output tm7filled.pdf``` needs to have the comment character __#__ removed for this to happen.
