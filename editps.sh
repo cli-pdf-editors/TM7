@@ -69,13 +69,23 @@ echo 252 574 moveto >> mid
 #surname.tgt Surname
 echo '(Surname)' show >> mid
 echo newpath >> mid
-echo 415 574 moveto >> mid
+echo 415 573 moveto >> mid
 #firstname.tgt Firstname
 echo '(Firstname)' show >> mid
+#salutation.tgt Mr Mrs Miss
 echo newpath >> mid
-echo 145 553 moveto >> mid
-#salutation.tgt Salutation_X_out_2_words
-echo '(X    X)' show >> mid
+echo 139 553 moveto >> mid # Mr
+echo '(X)' show >> mid
+echo newpath >> mid
+echo 156 554 moveto >> mid # Mrs
+echo '(X)' show >> mid
+echo newpath >> mid
+echo 175 554 moveto >> mid # Mr
+echo '(X)' show >> mid
+
+
+
+
 echo newpath >> mid
 echo 110 539 moveto >> mid
 #middlename.tgt Middle_name
