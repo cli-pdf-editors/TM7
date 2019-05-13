@@ -1,8 +1,0 @@
-# test data for test.sh
-lorem ipsum blah blah etc
-more blather
-#surname.tgt Your_surname
-(Parker) show
-#from.tgt Traveled_from
-(Mae Sai Melbourne Kuala Lumpur) show
-yet more blather
