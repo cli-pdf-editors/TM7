@@ -290,6 +290,6 @@ ps2pdf tm7back.ps tm7back.pdf
 
 # I don't have a 2 side printer capability so I fudge it by hand.
 # If you have double sided printing ability uncomment the next line.
-# pdftk tm7front.pdf tm7back.pdf cat output tm7filled.pdf
+pdftk tm7front.pdf tm7back.pdf cat output tm7filled.pdf
 
 #rm *.ps
