@@ -27,7 +27,67 @@ get_target() {
   dataline=$(sed -n "$datalno"p "$fn" |cut -d "(" -f2 | cut -d ")" -f1)
 } # get_target()
 fn=editps.sh
-for i in \#office.tgt \#surname.tgt \#firstname.tgt \#salutation.tgt \
+for i in \#office.tgt \#surname.tgt \#firstname.tgt
+do
+  get_target "$i"
+#  echo target is: "$target"
+#  echo lineno is: "$lineno"
+#  echo prompt is: "$prompt"
+#  echo datalno is: "$datalno"
+#  echo dataline is: "$dataline"
+  prompt="$prompt"" "
+  read -e -p "$prompt" -i "$dataline" textin
+  echo textin is: "$textin"
+  if [[ "$textin" != "$dataline" ]];
+  then
+    # Will update the edit script only when the user has made a change.
+    sed -i "$datalno s!$dataline!$textin!" "$fn"
+  fi
+  echo -------------------
+done
+
+# Handle the salutation (Mr Mrs Miss).
+# Three things to do.
+# 1. We don't know what editps.sh will cross out, so make it do all.
+# 2. Get user input named what to take the cross (X) off.
+# 3. If user input is legal, replace applicable X with ' ', or if it
+#    is crap, remove the X off all 3 items.
+# no conditional update, just do this.
+get_target "mr.tgt"
+sed -i "$datalno s!( )!(X)!" "$fn"
+get_target "mrs.tgt"
+sed -i "$datalno s!( )!(X)!" "$fn"
+get_target "miss.tgt"
+sed -i "$datalno s!( )!(X)!" "$fn"
+# Now get user input.
+prompt=Salutation" "
+dataline="Mr Mrs Miss"
+read -e -p "$prompt" -i "$dataline" textin
+echo textin is: "$textin"
+if [[ "$textin" == "Mr" ]]; then
+  get_target "mr.tgt"
+  textin=' '  # want a space to replace the X over 'Mr'
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+elif [[ "$textin" == "Mrs" ]]; then
+  get_target "mrs.tgt"
+  textin=' '  # want a space to replace the X over 'Mrs'
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+elif [[ "$textin" == "Miss" ]]; then
+  get_target "miss.tgt"
+  textin=' '  # want a space to replace the X over 'Miss'
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+else  # crap has been entered, so remove any/all X that exist.
+  get_target "mr.tgt"
+  textin=' '  # replace X with ' '
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+  get_target "mrs.tgt"
+  textin=' '  # replace X with ' '
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+  get_target "miss.tgt"
+  textin=' '  # replace X with ' '
+  sed -i "$datalno s!$dataline!$textin!" "$fn"
+fi
+for i in \
 \#middlename.tgt \#age.tgt \#birthdayDay.tgt \#birthmonthname.tgt \
 \#birthyear.tgt \#whereborn.tgt \#nationality.tgt \#passportNumber.tgt \
 \#ppIssueDate.tgt \#ppIssueMonth.tgt \#ppIssueYear.tgt \
