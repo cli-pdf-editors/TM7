@@ -60,7 +60,7 @@ echo setfont >> mid
 # Write the invariant and rarely changed data.
 # TM office location
 echo newpath >> mid
-echo 425 705 moveto >> mid
+echo 425 703 moveto >> mid
 #office.tgt Immigration_office_name
 echo '(Chiang Mai)' show >> mid
 # Name of Applicant
@@ -75,17 +75,16 @@ echo '(Firstname)' show >> mid
 #salutation.tgt Mr Mrs Miss
 echo newpath >> mid
 echo 139 553 moveto >> mid # Mr
-echo '(X)' show >> mid
+#mr.tgt
+echo '( )' show >> mid
 echo newpath >> mid
 echo 156 554 moveto >> mid # Mrs
+#mrs.tgt
 echo '(X)' show >> mid
 echo newpath >> mid
-echo 175 554 moveto >> mid # Mr
+echo 175 554 moveto >> mid # Miss
+#miss.tgt
 echo '(X)' show >> mid
-
-
-
-
 echo newpath >> mid
 echo 110 539 moveto >> mid
 #middlename.tgt Middle_name
